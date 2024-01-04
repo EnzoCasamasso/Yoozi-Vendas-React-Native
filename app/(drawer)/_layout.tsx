@@ -12,7 +12,7 @@ const DrawerLayout = () => {
                 drawerContent={CustomDrawerContent}
                 screenOptions={{
                     drawerHideStatusBarOnOpen: true,
-                    drawerActiveTintColor: '#4f46e5',
+                    drawerActiveTintColor: '#f59e0b',
                     drawerLabelStyle: { marginLeft: -20 },
                 }}>
                 <Drawer.Screen name='index' options={{
@@ -26,7 +26,7 @@ const DrawerLayout = () => {
                     drawerLabel: 'Login',
                     headerTitle: 'Login Page',
                     drawerIcon: ({ size, color }) => (
-                        <Ionicons name='home-sharp' size={size} color={color} />
+                        <Ionicons name='person-outline' size={size} color={color} />
                     )
                 }} />
             </Drawer>

@@ -3,8 +3,8 @@ import tamaguiConfig from '../tamagui.config';
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
 import { Drawer } from 'expo-router/drawer';
-
-
+import TestProvider from '../context/TesteContext';
+ 
 const RootLayout = () => {
     const [loaded] = useFonts({
         Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),
@@ -22,9 +22,11 @@ const RootLayout = () => {
     }
     return (
         <TamaguiProvider config={tamaguiConfig}>
-            <Drawer>
-                <Drawer.Screen name='(drawer)' options={{ headerShown: false }} />
-            </Drawer>
+            <TestProvider>
+                <Drawer>
+                    <Drawer.Screen name='(drawer)' options={{ headerShown: false }} />
+                </Drawer>
+            </TestProvider>
         </TamaguiProvider>
     )
 }
