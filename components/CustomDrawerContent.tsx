@@ -6,7 +6,7 @@ const CustomDrawerContent = (props: any) => {
     return (
         <DrawerContentScrollView {...props}>
             <DrawerItemList {...props}/>
-            <DrawerItem label={"Sair"} onPress={() => router.replace('/')}/>
+            <DrawerItem label={"Sair"} onPress={() => router.replace('/login')}/>
         </DrawerContentScrollView>
     )
 }
