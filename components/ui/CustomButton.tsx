@@ -1,15 +1,16 @@
-import { Button } from 'tamagui'
+import { Button, ButtonProps } from 'tamagui'
 import { Home } from '@tamagui/lucide-icons'
-const CustomButton = ({label, color} : any) => {
+
+interface CustomButton extends ButtonProps {
+    label: string;
+}
+
+const CustomButton = (props : CustomButton) => {
     return (
         <Button
-            alignSelf="center" 
-            backgroundColor={color}
-            pressTheme={true}
-            icon={Home} 
-            size="$6"
+           {...props}
         >
-            {label}
+            {props.label}
         </Button>
     )
 }
