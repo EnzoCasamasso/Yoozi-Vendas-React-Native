@@ -1,5 +1,5 @@
 import { TamaguiProvider } from 'tamagui'
-import tamaguiConfig from '../tamagui.config';
+import tamaguiConfig from '../../tamagui.config';
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
 import { Drawer } from 'expo-router/drawer';

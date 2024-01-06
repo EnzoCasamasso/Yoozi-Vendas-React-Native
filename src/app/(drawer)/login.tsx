@@ -36,10 +36,9 @@ export default function LoginPage() {
     })
 
     return (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Text>Login</Text>
-            <YStack padding="$3" minWidth={300} space="$4">
-                <XStack alignItems="center" space="$4">
+        <YStack>
+            <YStack padding="$3" minWidth={300} space={"$3"}>
+                <XStack alignItems="center">
                     <Label width={90} htmlFor="name">
                         Name
                     </Label>
@@ -56,12 +55,15 @@ export default function LoginPage() {
                                 value={value}
                                 onBlur={onBlur}
                                 onChangeText={onChange}
-                                borderColor='#4f46e5' />
+                                borderColor='gray'
+                                focusStyle={{
+                                    borderColor: '#4f46e5'
+                                }} />
                         )}
                     />
                 </XStack>
 
-                <XStack alignItems="center" space="$4">
+                <XStack alignItems="center">
                     <Label width={90} htmlFor="notify">
                         Email
                     </Label>
@@ -77,13 +79,16 @@ export default function LoginPage() {
                                 placeholder="Email"
                                 value={value}
                                 onBlur={onBlur}
-                                onChangeText={onChange} />
+                                onChangeText={onChange}
+                                borderColor='gray'
+                                focusStyle={{
+                                    borderColor: '#4f46e5'
+                                }} />
                         )}
                     />
-
                 </XStack>
 
-                <XStack alignItems="center" space="$4">
+                <XStack alignItems="center">
                     <Label width={90} htmlFor="notify">
                         Senha
                     </Label>
@@ -99,7 +104,11 @@ export default function LoginPage() {
                                 placeholder="Senha"
                                 value={value}
                                 onBlur={onBlur}
-                                onChangeText={onChange} />
+                                onChangeText={onChange}
+                                borderColor='gray'
+                                focusStyle={{
+                                    borderColor: '#4f46e5'
+                                }} />
                         )}
                     />
                 </XStack>
@@ -108,6 +117,6 @@ export default function LoginPage() {
                 <Button onPress={handleSubmit(onSubmit)}>Submit</Button>
             </Theme>
             <Button onPress={onToggleMenu}>Toggle Menu</Button>
-        </View>
+        </YStack>
     )
 }

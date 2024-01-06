@@ -1,14 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { Button, Theme } from 'tamagui'
+import { Button, Theme, YStack, Text } from 'tamagui'
 import { Home } from '@tamagui/lucide-icons'
 
-const HomePage = () => {
+export default function HomePage() {
     const onClick = () => {
         console.log('Button home page has been clicked')
     }
     return (
-        <View style={{flex:1, alignItems: 'center', justifyContent: 'center', gap: 10}}>
+        <YStack>
             <Text>This is a real home page.</Text>
             <Theme name='dark'>
                 <Button
@@ -20,8 +19,7 @@ const HomePage = () => {
                     Funcionando
                 </Button>
             </Theme>
-        </View>
+        </YStack>
     )
 }
 
-export default HomePage;
