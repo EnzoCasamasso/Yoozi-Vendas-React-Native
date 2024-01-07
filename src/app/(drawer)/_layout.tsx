@@ -29,6 +29,13 @@ const DrawerLayout = () => {
                         <Ionicons name='person-outline' size={size} color={color} />
                     )
                 }} />
+                <Drawer.Screen name='configuration' options={{
+                    drawerLabel: 'Configurações',
+                    headerTitle: 'Configurações',
+                    drawerIcon: ({ size, color }) => (
+                        <Ionicons name='options-outline' size={size} color={color} />
+                    )
+                }} />
             </Drawer>
         </GestureHandlerRootView>
     )
