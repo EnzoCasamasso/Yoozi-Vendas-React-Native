@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useForm, Controller, SubmitHandler } from 'react-hook-form';
 import { useNavigation } from "expo-router";
-import { View, Text } from "react-native";
 import { DrawerActions } from "@react-navigation/native";
 import { Input, Label, Button, Theme, YStack, XStack } from "tamagui";
 

@@ -24,7 +24,9 @@ const RootLayout = () => {
         <TamaguiProvider config={tamaguiConfig}>
             <TestProvider>
                 <Drawer>
-                    <Drawer.Screen name='(drawer)' options={{ headerShown: false }} />
+                    <Drawer.Screen 
+                        name='(drawer)' 
+                        options={{ headerShown: false }} />
                 </Drawer>
             </TestProvider>
         </TamaguiProvider>
