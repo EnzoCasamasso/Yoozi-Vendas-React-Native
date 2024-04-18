@@ -5,10 +5,10 @@ interface CustomButton extends ButtonProps {
     label: string;
 }
 
-const CustomButton = (props : CustomButton) => {
+const CustomButton = (props: CustomButton) => {
     return (
         <Button
-           {...props}
+            {...props}
         >
             {props.label}
         </Button>
